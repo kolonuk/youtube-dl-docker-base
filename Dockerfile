@@ -6,7 +6,7 @@ RUN apt-get install wget bash cron psmisc mplayer python3 python3-pip -y --no-in
 
 RUN pip install flask
 
-RUN wget https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar.xz -O /root/ffmpeg.tar.xz && /
+RUN wget https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar.xz -O /root/ffmpeg.tar.xz && \
     mkdir /root/ffmpeg && \
     tar -xf /root/ffmpeg.tar.xz --directory /root/ffmpeg --strip-components=1 && \
     cd /root/ffmpeg && \
