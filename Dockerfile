@@ -2,7 +2,7 @@ FROM python:slim
 
 RUN apt-get update
 RUN apt-get upgrade -y
-RUN apt-get install wget bash cron psmisc unzip xz-utils mplayer python3 python3-pip -y --no-install-recommends
+RUN apt-get install wget bash cron procps unzip xz-utils mplayer python3 python3-pip -y --no-install-recommends
 
 RUN pip install flask
 
